@@ -1,0 +1,39 @@
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.name {
+  width: 120px;
+  overflow: hidden;
+}
+
+.number {
+  width: 70px;
+  overflow: hidden;
+}
+
+.delete_btn {
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: inherit;
+}
+
+.delete_btn:hover,
+.delete_btn:focus {
+  background-color: red;
+}
+
+@media screen and (min-width: 768px) {
+  .name {
+    width: 200px;
+  }
+
+  .number {
+    width: 150px;
+  }
+}

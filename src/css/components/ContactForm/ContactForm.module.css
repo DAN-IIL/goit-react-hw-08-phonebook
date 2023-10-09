@@ -1,0 +1,46 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border: solid;
+  font-size: smaller;
+}
+
+.form label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form label input {
+  padding: 5px;
+  overflow: hidden;
+  border-radius: 5px;
+  border-color: black;
+}
+
+.form label input:valid {
+  border-color: green;
+}
+
+.form button {
+  width: 70%;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.form button:hover,
+.form button:focus {
+  background-color: lightgreen;
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    font-size: medium;
+  }
+}

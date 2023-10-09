@@ -1,0 +1,32 @@
+import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { deleteContact } from '../../../redux/contacts/contactsThunks';
+import css from '../../../../css/components/ContactList/Contact/Contact.module.css';
+
+Contact.propTypes = {
+  name: PropTypes.string.isRequired,
+  // number: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};
+
+export default function Contact({ id, name, number }) {
+  const dispatch = useDispatch();
+
+  const sendDeleteContact = () => {
+    dispatch(deleteContact(id));
+  };
+
+  return (
+    <div className={css.contact}>
+      <p className={css.name}>{name}:</p>
+      <p className={css.number}>{number}</p>
+      <button
+        name="deleteBtn"
+        className={css.delete_btn}
+        onClick={sendDeleteContact}
+      >
+        Delete
+      </button>
+    </div>
+  );
+}
