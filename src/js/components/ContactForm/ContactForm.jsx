@@ -72,11 +72,12 @@ export default function ContactForm() {
   );
 }
 
-function isContactPresent(name, number, items) {
-  if (items.length > 0) {
-    return items.find(
-      item =>
-        item.name.toLowerCase() === name.toLowerCase() && item.phone === number
+function isContactPresent(name, number, contacts) {
+  if (contacts.length > 0) {
+    return contacts.find(
+      contact =>
+        contact.name.toLowerCase() === name.toLowerCase() ||
+        contact.number === number
     );
   } else {
     return false;

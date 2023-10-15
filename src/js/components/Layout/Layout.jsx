@@ -92,8 +92,8 @@ function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
-      <a href="mailto: olekspm@gmail.com" style={{ color: 'inherit' }}>
-        Phonebook by OleksPM
+      <a href="mailto: pidgorniydaiil@gmail.com" style={{ color: 'inherit' }}>
+        Phonebook by DAN-IIL
       </a>{' '}
       {new Date().getFullYear()}
       {'.'}
